@@ -1,0 +1,23 @@
+apply plugin: 'idea'
+apply plugin: 'groovy'
+apply plugin: 'maven'
+
+
+sourceCompatibility = 1.6
+
+archivesBaseName = 'core'
+group = 'wordgame'
+version = 'dev-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+
+dependencies {
+
+    groovy 'org.codehaus.groovy:groovy:2.0.5'
+    testCompile 'org.mockito:mockito-all:1.9.5'
+    testCompile 'junit:junit:4.10'
+    testCompile 'org.spockframework:spock-core:0.7-groovy-2.0'
+}
